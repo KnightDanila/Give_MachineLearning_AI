@@ -1,0 +1,14 @@
+Light version - for Neo and other
+https://www.python.org/downloads/
+https://code.visualstudio.com/download
+
+Medium-rare version
+Anaconda = Chrome + Jupyter Notebook + Interactive Plots
+https://www.anaconda.com/products/distribution
+
+* version - You've taken all you can bear
+PyCharm Community Edition
+
+
+Симба, Мирон, Веня, Пуля
+Джесика, Ричард

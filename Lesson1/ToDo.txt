@@ -1,0 +1,22 @@
+Text Analysis
+Content analysis 
+Sentiment analysis
+Semantic analysis 
+	Turing test
+	China Room
+	Winograd Schema Challenge
+	
+Text mining
+GPT-2
+
+Data Visualisation
+WordCloud
+DataClouds
+Chernoff Face
+
+Detective
+FBI
+Rubbery - Bomb - Types of crime
+Cash Back
+
+Economy

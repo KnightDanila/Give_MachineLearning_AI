@@ -1,0 +1,5 @@
+iris fisher dataset
+
+https://github.com/tensorflow/tensorflow
+
+https://github.com/fffaraz/awesome-cpp#artificial-intelligence
