@@ -26,8 +26,21 @@ and open the template in the editor.
         <!--<link href="theme/xClose.css" rel="stylesheet" type="text/css"/>-->
 
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <!--To add inline mode-->
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+            tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            processEscapes: true
+            }
+            });
+        </script>
+        <script type="text/javascript"
+                src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        </script>
+        <!--To add inline mode-->
     </head>
     <body id="MainPresentation">
         <div id="Timer1" class="simpleTimer simpleTimer-white simpleTimer-alignLeft simpleTimer-fly simpleTimer-box">timer1</div>
@@ -67,18 +80,15 @@ and open the template in the editor.
                     </div>
                 </section>
 
-                <!--Topic N-->
+
                 <section>
                     <section>
-                        <h3>Topic N</h3>
-                        <img src="data/PIC_Memory.png" style="background-color: rgb(255,255,255);" alt="" />
-                        <a target="_blank" href="https://en.wikipedia.org/wiki/User:KnightDanila">https://en.wikipedia.org/wiki/User:KnightDanila</a>
-                        <br>E:\Learn It\GAMES-Programming\Web-Programming\Audio\test
+                        <video width="640" height="480" controls>
+                            <source src="data/PoTC_Fuzzy wuzzy was a bear..mp4" type="video/mp4">
+                            Your browser does not support the <code>video</code> tag.
+                        </video>
                     </section>
-                    <section>Vertical Slide 1</section>
-                    <section>Vertical Slide 2</section>
                 </section>
-
                 <section>
                     <section>
                         <h3>3 Base Logic Types</h3>
@@ -106,14 +116,6 @@ and open the template in the editor.
                         $$ FuzzyLogic \subset ManyValuedLogic $$
                         "Fuzzy Logic" have a friend as "Probability logic"
 
-                    </section>
-                </section>
-
-                <section>
-                    <section>
-                        <h3>Classic (Crisp) logic:</h3>
-                        When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
-                        $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
                     </section>
                 </section>
 
@@ -263,27 +265,236 @@ and open the template in the editor.
 
                 <section>
                     <section>
-                        <h3>Classic (Crisp) logic:</h3>
-                        When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
-                        $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+                        <h3>Plan:</h3>
+                        <ol>
+                            <li>Fuzzy Set</li>
+                            <li>$$\mu_{termA}(x) - function $$</li>
+                            <li>Linguistic variable</li>
+                            <li>Fuzzification</li>
+                        </ol>
                     </section>
                 </section>
 
-                <section style="text-align: left;">
-                    <h3>List</h3>
-                    <br> 1. Elem
-                    <br> 2. Elem
-                    <br><mark>3. ElemMark</mark> 
-                    <h3>Code</h3>
-                    <pre class="cpp"><code>
-                        // define the function's prototype
-                        typedef void (*GL_GENBUFFERS) (GLsizei, GLuint*);
-                        // find the function and assign it to a function pointer
-                        GL_GENBUFFERS glGenBuffers  = (GL_GENBUFFERS)wglGetProcAddress("glGenBuffers");
-                        // function can now be called as normal
-                        unsigned int buffer;
-                        glGenBuffers(1, &buffer);
-                        </code></pre>
+                <section>
+                    <section>
+                        <h4>Fuzzy Set</h4>
+                        <img src="data/fuzzy-set-vs-crisp-set.png" alt="" class="stretch plain"/>
+                    </section>
+
+                    <section>
+                        <h4>Fuzzy Set</h4>
+                        <img src="data/Fuzzy_set_Mixed_1.png" alt="" class="stretch plain"/>
+                    </section>
+
+                    <section>
+                        <h4>Fuzzy Set</h4>
+                        <img src="data/Fuzzy_set_Mixed_3.png" alt="" class="stretch plain"/>
+                    </section>
+
+                    <section>
+                        <h4>Fuzzy Set</h4>
+                        <img src="data/Fuzzy_set_Mixed_4.png" alt="" class="stretch plain"/>
+                    </section>
+                    <section>
+                        <h4>Fuzzy Set</h4>
+                        <img src="data/Fuzzy_set_Mixed_5.png" alt="" class="stretch plain"/>
+                    </section>
+                    <section>
+                        <h4>Fuzzy Set</h4>
+                        <img src="data/Fuzzy_set_Mixed_6.gif" alt="" class="stretch plain"/>
+                    </section>
+
+                    <section>
+                        <img src="data/Fuzzy_set_Mixed_7.png" alt="" class="stretch plain"/>
+                        ForMe: нельзя найти точную классификацию - только взаимосвязь и процентное отношение
+                    </section>
+
+                    <section>
+                        Correlation - dataset correlation
+                        <br>
+                        k means clustering
+                        <br>
+                        Voronoi diagrams
+                        <br>
+                        <img src="data/Fuzzy_set_kmeans.png" alt="" class="stretch plain"/>
+                    </section>
+
+                    <section>
+                        Other application of fuzzy set
+                        <img src="data/Fuzzy_set_CGI2.gif" alt="" class="stretch plain"/>
+                    </section>
+                    <section>
+                        Other application of fuzzy set
+                        <img src="data/Fuzzy_set_CGI1.gif" alt="" class="stretch plain"/>
+                    </section>
+                </section>
+
+
+                <section>
+                    <section>
+                        <h4>$$\mu - function $$</h4>
+                    </section>
+                    <section>
+                        <h4>$$\mu - function $$</h4>
+                        interactive app - will add it soon
+                    </section>
+
+                    <section>
+                        <h4>$$\mu - function $$</h4>
+                        Membership function - that is why $$\mu$$
+                        <br>
+                        Функція належності
+                        <br>
+                        Функция принадлежности
+                    </section>
+
+                    <section>
+                        <h4>$$\mu - function $$</h4>
+                        $$\mu_{A}(x)$$
+                        $$\mu_{termA}(x)$$
+
+                        $\mu_{A}(x)$ - for any x and any A $\mu_{A}(x)$ on real unit interval [0,1]
+                        <br>
+                        x - real crisp value - $x \in X$ - x on real unit interval - for example: X[0,100]
+                        <br>
+                        A - term (but in some books you will read it is fuzzy set)
+                        <a href="https://en.wikipedia.org/wiki/Membership_function_(mathematics))">
+                            https://en.wikipedia.org/wiki/Membership_function_(mathematics)
+                        </a>
+                    </section>
+                    <section>
+                        <h4>$$\mu - function $$</h4>
+                        the value $\mu _{A}(x)$ is called the membership 
+                        <br>
+                        degree of x in the fuzzy set $\tilde  A$    
+                    </section>
+                    <section>
+                        $\mu$ - function can be used in Crisp and in Fuzzy logic
+                        <img src="data/Mu_Function_Difference-between-crisp-and-fuzzy-function-of-membership.png" alt="" class="stretch plain"/>
+                    </section>
+                    <section>
+                        <img src="data/Mu_Function_Fuzzy Logic_Difference-between-Crisp-and-Fuzzy-Sets.png" alt="" class="stretch plain"/>
+                    </section>
+                    <section>
+                        <h4>Example - Temperature</h4>
+                        <img src="data/Mu_Function_Traditional-crisp-set-and-fuzzy-set-membership-functions.png" alt="" class="stretch plain"/>
+                    </section>
+
+                    <section>
+                        <h4>Example - HOMM3</h4>
+                        <img src="data/HoMM3_1.png" alt="" class="stretch plain"/>
+                    </section>
+
+                    <section>
+                        <h4>Example - HOMM3</h4>
+                        <img src="data/HoMM3_2.png" alt="" class="stretch plain"/>
+                    </section>
+
+                    <section>
+                        <h4>Example - HOMM3</h4>
+                        <img src="data/HoMM3_3.png" alt="" class="stretch plain"/>
+                    </section>
+
+                    <section>
+                        <h4>Example - HOMM3</h4>
+                        Термы: Врагов {Мало, Несколько, Группа, Толпа, Орда, Сотня, Тьма, Туча, Легион};
+
+                        <table style="font-size: large">
+                            <tbody><tr>
+                                    <th>Численность</th>
+                                    <th>Оригинальное<br>название</th>
+                                    <th>Перевод</th>
+                                    <th>Перевод от <a href="https://ru.wikipedia.org/wiki/%D0%91%D1%83%D0%BA%D0%B0_(%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F)" class="extiw" title="w:Бука (компания)">Бука</a></th>
+                                    <th>Перевод от <a href="https://ru.wikipedia.org/wiki/Ubisoft" class="extiw" title="w:Ubisoft">Ubisoft</a>
+                                    </th></tr>
+                                <tr>
+                                    <td>1—4</td>
+                                    <td>Few</td>
+                                    <td>мало</td>
+                                    <td>пара</td>
+                                    <td>мало/отряд
+                                    </td></tr>
+                                <tr>
+                                    <td>5—9</td>
+                                    <td>Several</td>
+                                    <td>несколько</td>
+                                    <td>мало</td>
+                                    <td>кучка
+                                    </td></tr>
+                                <tr>
+                                    <td>10—19</td>
+                                    <td>Pack</td>
+                                    <td>стая</td>
+                                    <td>группа</td>
+                                    <td>группа
+                                    </td></tr>
+                                <tr>
+                                    <td>20—49</td>
+                                    <td>Lots</td>
+                                    <td>много</td>
+                                    <td>толпа</td>
+                                    <td>скопище
+                                    </td></tr>
+                                <tr>
+                                    <td>50—99</td>
+                                    <td>Horde</td>
+                                    <td>орда</td>
+                                    <td>орда</td>
+                                    <td>банда
+                                    </td></tr>
+                                <tr>
+                                    <td>100—249</td>
+                                    <td>Throng</td>
+                                    <td>толпа</td>
+                                    <td>сотня</td>
+                                    <td>орда
+                                    </td></tr>
+                                <tr>
+                                    <td>250—499</td>
+                                    <td>Swarm</td>
+                                    <td>свора</td>
+                                    <td>туча</td>
+                                    <td>
+                                    </td></tr>
+                                <tr>
+                                    <td>500—999</td>
+                                    <td>Zounds</td>
+                                    <td>тысячи</td>
+                                    <td>тьма</td>
+                                    <td>
+                                    </td></tr>
+                                <tr>
+                                    <td>более 1000</td>
+                                    <td>Legion</td>
+                                    <td>легион</td>
+                                    <td>легион</td>
+                                    <td>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    
+<!--                    Vasabi and Vine -> || cnbhbkbwfwbz djls b tlb -->
+
+                </section>
+                <section>
+                    <section>         
+                        <h4>Linguistic variable</h4>
+                        Bottle example
+                        
+                    </section>
+
+                    <section>         
+                        <h4>Linguistic variable</h4>
+                        Lotfi A. Zadeh - made a Fuzzy Logic - He elaborated on his ideas in a 1973 paper that introduced the concept of "linguistic variables".
+                    </section>
+                    <section> 
+                        <h4>Linguistic variable</h4>
+                    </section>
+                    <section>
+                        Example - thermometer and patient
+                    </section>
                 </section>
 
                 <section>
@@ -310,9 +521,21 @@ and open the template in the editor.
                             <li>
                                 Fuzzy - https://en.wikipedia.org/wiki/Fuzzy_logic
                             </li>
+                            <li>
+                                Fuzzy - https://en.wikipedia.org/wiki/Fuzzy_control_system
+                            </li>
                         </ul>
 
 
+                    </section>
+                </section>
+
+
+                <section>
+                    <section>
+                        <h3>Classic (Crisp) logic:</h3>
+                        When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
+                        $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
                     </section>
                 </section>
 
@@ -326,91 +549,91 @@ and open the template in the editor.
 
         <script src="../js/libs/reveal.js/js/reveal.js"></script>
         <script>
-            Reveal.initialize({
-                // Display controls in the bottom right corner
-                controls: true,
-                // Display a presentation progress bar
-                progress: true,
-                // Set default timing of 2 minutes per slide
-                defaultTiming: 120,
-                // Display the page number of the current slide
-                slideNumber: true,
-                // Push each slide change to the browser history
-                history: false,
-                // Enable keyboard shortcuts for navigation
-                keyboard: true,
-                // Enable the slide overview mode
-                overview: true,
-                // Vertical centering of slides
-                center: true,
-                // Enables touch navigation on devices with touch input
-                touch: true,
-                // Loop the presentation
-                loop: false,
-                // Change the presentation direction to be RTL
-                rtl: false,
-                // Randomizes the order of slides each time the presentation loads
-                shuffle: false,
-                // Turns fragments on and off globally
-                fragments: true,
-                // Flags if the presentation is running in an embedded mode,
-                // i.e. contained within a limited portion of the screen
-                embedded: false,
-                // Flags if we should show a help overlay when the questionmark
-                // key is pressed
-                help: true,
-                // Flags if speaker notes should be visible to all viewers
-                showNotes: false,
-                // Global override for autolaying embedded media (video/audio/iframe)
-                // - null: Media will only autoplay if data-autoplay is present
-                // - true: All media will autoplay, regardless of individual setting
-                // - false: No media will autoplay, regardless of individual setting
-                autoPlayMedia: null,
-                // Number of milliseconds between automatically proceeding to the
-                // next slide, disabled when set to 0, this value can be overwritten
-                // by using a data-autoslide attribute on your slides
-                autoSlide: 0,
-                // Stop auto-sliding after user input
-                autoSlideStoppable: true,
-                // Use this method for navigation when auto-sliding
-                autoSlideMethod: Reveal.navigateNext,
-                // Enable slide navigation via mouse wheel
-                mouseWheel: false,
-                // Hides the address bar on mobile devices
-                hideAddressBar: true,
-                // Opens links in an iframe preview overlay
-                previewLinks: false,
-                // Transition style
-                transition: 'slide', // none/fade/slide/convex/concave/zoom
+                    Reveal.initialize({
+                        // Display controls in the bottom right corner
+                        controls: true,
+                        // Display a presentation progress bar
+                        progress: true,
+                        // Set default timing of 2 minutes per slide
+                        defaultTiming: 120,
+                        // Display the page number of the current slide
+                        slideNumber: true,
+                        // Push each slide change to the browser history
+                        history: false,
+                        // Enable keyboard shortcuts for navigation
+                        keyboard: true,
+                        // Enable the slide overview mode
+                        overview: true,
+                        // Vertical centering of slides
+                        center: true,
+                        // Enables touch navigation on devices with touch input
+                        touch: true,
+                        // Loop the presentation
+                        loop: false,
+                        // Change the presentation direction to be RTL
+                        rtl: false,
+                        // Randomizes the order of slides each time the presentation loads
+                        shuffle: false,
+                        // Turns fragments on and off globally
+                        fragments: true,
+                        // Flags if the presentation is running in an embedded mode,
+                        // i.e. contained within a limited portion of the screen
+                        embedded: false,
+                        // Flags if we should show a help overlay when the questionmark
+                        // key is pressed
+                        help: true,
+                        // Flags if speaker notes should be visible to all viewers
+                        showNotes: false,
+                        // Global override for autolaying embedded media (video/audio/iframe)
+                        // - null: Media will only autoplay if data-autoplay is present
+                        // - true: All media will autoplay, regardless of individual setting
+                        // - false: No media will autoplay, regardless of individual setting
+                        autoPlayMedia: null,
+                        // Number of milliseconds between automatically proceeding to the
+                        // next slide, disabled when set to 0, this value can be overwritten
+                        // by using a data-autoslide attribute on your slides
+                        autoSlide: 0,
+                        // Stop auto-sliding after user input
+                        autoSlideStoppable: true,
+                        // Use this method for navigation when auto-sliding
+                        autoSlideMethod: Reveal.navigateNext,
+                        // Enable slide navigation via mouse wheel
+                        mouseWheel: false,
+                        // Hides the address bar on mobile devices
+                        hideAddressBar: true,
+                        // Opens links in an iframe preview overlay
+                        previewLinks: false,
+                        // Transition style
+                        transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-                // Transition speed
-                transitionSpeed: 'default', // default/fast/slow
+                        // Transition speed
+                        transitionSpeed: 'default', // default/fast/slow
 
-                // Transition style for full page slide backgrounds
-                backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+                        // Transition style for full page slide backgrounds
+                        backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
 
-                // Number of slides away from the current that are visible
-                viewDistance: 3,
-                // Parallax background image
-                //parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+                        // Number of slides away from the current that are visible
+                        viewDistance: 3,
+                        // Parallax background image
+                        //parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
 
-                // Parallax background size
-                //parallaxBackgroundSize: '1600px 1200px', // CSS syntax, e.g. "2100px 900px"
+                        // Parallax background size
+                        //parallaxBackgroundSize: '1600px 1200px', // CSS syntax, e.g. "2100px 900px"
 
-                // Number of pixels to move the parallax background per slide
-                // - Calculated automatically unless specified
-                // - Set to 0 to disable movement along an axis
-                parallaxBackgroundHorizontal: null,
-                parallaxBackgroundVertical: null,
-                // The display mode that will be used to show slides
-                display: 'block',
+                        // Number of pixels to move the parallax background per slide
+                        // - Calculated automatically unless specified
+                        // - Set to 0 to disable movement along an axis
+                        parallaxBackgroundHorizontal: null,
+                        parallaxBackgroundVertical: null,
+                        // The display mode that will be used to show slides
+                        display: 'block',
 
-                dependencies: [
-                    {src: '../js/libs/highlight.js/highlight.min.js', async: true, callback: function () {
-                            hljs.initHighlightingOnLoad();
-                        }}
-                ]
-            });
+                        dependencies: [
+                            {src: '../js/libs/highlight.js/highlight.min.js', async: true, callback: function () {
+                                    hljs.initHighlightingOnLoad();
+                                }}
+                        ]
+                    });
         </script>
         <!--<script src="theme/keysActions.js" type="text/javascript"></script>-->
         <script>
